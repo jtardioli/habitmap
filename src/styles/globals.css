@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .grid-52-columns {
+    @apply grid grid-flow-row auto-rows-max;
+    grid-template-columns: repeat(52, minmax(0, 1fr));
+  }
+}
